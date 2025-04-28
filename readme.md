@@ -30,7 +30,7 @@ A Windows Forms application that simulates various CPU scheduling algorithms wit
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone [https://github.com/phgoncalves2603/OS-2.git]
 ```
 
 2. Open the solution:
@@ -72,146 +72,49 @@ git clone [your-repository-url]
 
 ## Test Cases
 
-The simulator includes three predefined test cases:
-
 ### Test Case 1: Basic Test (3 Processes)
-give all the algorithms code
+| Process | Burst Time | Priority |
+|:-------:|:----------:|:--------:|
+| P1      | 4          | 1        |
+| P2      | 8          | 2        |
+| P3      | 2          | 3        |
 
-I'll provide all the algorithms with the modifications to return average waiting times:
-Apply to readme.md
-Each algorithm now:
-Returns the average waiting time
-Uses TestData for input and dialog boxes
-Has improved error handling
-Uses consistent formatting for output
-Implements the core scheduling logic correctly
-To use these algorithms with the SchedulingTester we created earlier, just replace your current Algorithms.cs file with this one. The tester will now be able to collect and display the results in a table format.
-Would you like me to explain any specific part of these algorithms or help you test them?
-those where the result i got "
-=== Final Results for All Test Cases ===
+**Description:**  
+- Small test case to verify basic functionality.
+- Mix of burst times to test short and long processes.
+- Sequential priorities (1, 2, 3).
 
-====================================================================================================
-Test Case       Algorithm       Avg Wait Time        Avg Turnaround       CPU Util (%)   
-----------------------------------------------------------------------------------------------------
-Test Case 1     FCFS            0.00                 0.00                 95.00          
-Test Case 1     SJF             0.00                 0.00                 95.00          
-Test Case 1     Priority        0.00                 0.00                 95.00          
-Test Case 1     RoundRobin      0.00                 0.00                 95.00          
-Test Case 1     SRTF            0.00                 0.00                 95.00          
-Test Case 1     MLFQ            0.00                 0.00                 95.00          
-----------------------------------------------------------------------------------------------------
-Test Case 2     FCFS            0.00                 0.00                 95.00          
-Test Case 2     SJF             0.00                 0.00                 95.00          
-Test Case 2     Priority        0.00                 0.00                 95.00          
-Test Case 2     RoundRobin      0.00                 0.00                 95.00          
-Test Case 2     SRTF            0.00                 0.00                 95.00          
-Test Case 2     MLFQ            0.00                 0.00                 95.00          
-----------------------------------------------------------------------------------------------------
-Test Case 3     FCFS            0.00                 0.00                 95.00          
-Test Case 3     SJF             0.00                 0.00                 95.00          
-Test Case 3     Priority        0.00                 0.00                 95.00          
-Test Case 3     RoundRobin      0.00                 0.00                 95.00          
-Test Case 3     SRTF            0.00                 0.00                 95.00          
-Test Case 3     MLFQ            0.00                 0.00                 95.00          
-----------------------------------------------------------------------------------------------------"
-
-The issue is that we need to modify the RunAlgorithm method in the SchedulingTester class to actually capture the returned average waiting time. Here's the corrected SchedulingTester.cs:
-Apply to readme.md
-The main changes are:
-Removed the RunAlgorithm helper method and directly calling the algorithm methods
-Storing the actual returned values from the algorithms
-Calculating turnaround time as waiting time + average burst time
-Improved the formatting of the results table
-Also, make sure your TestData.cs file is correct:
-Apply to readme.md
-This should now show the actual calculated average waiting times and turnaround times for each algorithm. Would you like me to explain any part of these changes?
-can you give a sumarry about the tests? like how many processors for each test and burs
-
-Here's a summary of the test cases:
-Apply to readme.md
-Let me explain each test case:
-Test Case 1 (3 Processes)
-Small test case to verify basic functionality
-Mix of burst times (2, 4, 8) to test different process lengths
-Sequential priorities (1, 2, 3)
-Good for testing basic scheduling behavior
-Test Case 2 (5 Processes)
-Medium-sized test with more varied workload
-Burst times: 6, 4, 8, 2, 5 (mix of short and long processes)
-Priorities: 3, 1, 4, 2, 5 (non-sequential to test priority handling)
-Good for testing how algorithms handle more complex scenarios
-Test Case 3 (4 Processes)
-Edge case test with identical burst times (all 4)
-Sequential priorities (1, 2, 3, 4)
-Tests how algorithms handle equal burst times
-Particularly useful for testing fairness in scheduling
-These test cases help evaluate:
-How algorithms handle different process lengths
-Priority management
-Fairness in scheduling
-Performance with different workload sizes
-Edge cases like identical burst times
-Would you like me to add this summary to the test output, or would you like more details about any specific test case?
-create a  ‘README.md‘ file explaining how to build and run the project.
-
-I'll help you create a comprehensive README.md file for your CPU Scheduling Simulator project:
-Apply to readme.md
-Process Burst Time Priority
-P1 4 1
-P2 8 2
-P3 2 3
-Apply to readme.md
-Process Burst Time Priority
-P1 6 3
-P2 4 1
-P3 8 4
-P4 2 2
-P5 5 5
-Apply to readme.md
-Process Burst Time Priority
-P1 4 1
-P2 4 2
-P3 4 3
-P4 4 4
-Apply to readme.md
-This README.md provides:
-Project overview
-Setup instructions
-Usage guidelines
-Test case descriptions
-Algorithm explanations
-Contributing guidelines
-Would you like me to modify any section or add more details to specific parts?
-give me all in one text file
-
-I'll help you create a complete text file containing all the code and documentation. Here's how to organize it:
-Apply to readme.md
-give me the read complete
-
-Here's the complete README.md content:
-Apply to readme.md
-Process Burst Time Priority
-P1 4 1
-P2 8 2
-P3 2 3
+---
 
 ### Test Case 2: Medium Load (5 Processes)
-Process Burst Time Priority
-P1 6 3
-P2 4 1
-P3 8 4
-P4 2 2
-P5 5 5
+| Process | Burst Time | Priority |
+|:-------:|:----------:|:--------:|
+| P1      | 6          | 3        |
+| P2      | 4          | 1        |
+| P3      | 8          | 4        |
+| P4      | 2          | 2        |
+| P5      | 5          | 5        |
+
+**Description:**  
+- Medium-sized test with more varied workloads.
+- Mix of short and long processes.
+- Non-sequential priorities (tests priority handling).
+
+---
 
 ### Test Case 3: Edge Case (4 Processes)
+| Process | Burst Time | Priority |
+|:-------:|:----------:|:--------:|
+| P1      | 4          | 1        |
+| P2      | 4          | 2        |
+| P3      | 4          | 3        |
+| P4      | 4          | 4        |
 
-Process Burst Time Priority
-P1 4 1
-P2 4 2
-P3 4 3
-P4 4 4
+**Description:**  
+- Edge case test with identical burst times.
+- Sequential priorities.
+- Good for testing fairness in scheduling.
 
-Description: Edge case test with identical burst times
 
 ## Algorithm Implementations
 
