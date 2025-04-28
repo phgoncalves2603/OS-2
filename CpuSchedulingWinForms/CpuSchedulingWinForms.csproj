@@ -76,6 +76,8 @@
     <Compile Include="ModifyProgressBarColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchedulingTester.cs" />
+    <Compile Include="TestData.cs" />
     <EmbeddedResource Include="CpuScheduler.resx">
       <DependentUpon>CpuScheduler.cs</DependentUpon>
     </EmbeddedResource>

@@ -62,3 +62,24 @@ E:\Development Projects\.Net Projects\CpuSchedulingWinForms\CpuSchedulingWinForm
 E:\Development Projects\.Net Projects\CpuSchedulingWinForms\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.csproj.CopyComplete
 E:\Development Projects\.Net Projects\CpuSchedulingWinForms\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.exe
 E:\Development Projects\.Net Projects\CpuSchedulingWinForms\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.pdb
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\CpuSchedulingWinForms.exe.config
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\CpuSchedulingWinForms.exe
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\CpuSchedulingWinForms.pdb
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\AForge.dll
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.dll
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.presentation.dll
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\AForge.xml
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.pdb
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.xml
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.presentation.pdb
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\bin\Debug\zxing.presentation.xml
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.csproj.AssemblyReference.cache
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.CpuScheduler.resources
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.Form1.resources
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.Properties.Resources.resources
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.csproj.GenerateResource.cache
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.csproj.CoreCompileInputs.cache
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSched.BA2933A9.Up2Date
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.exe
+C:\Users\guigu\Documents\CPU-Simulator-GUI\CpuSchedulingWinForms\obj\Debug\CpuSchedulingWinForms.pdb

@@ -49,6 +49,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cpuSchedulerTab = new System.Windows.Forms.TabPage();
+            this.btnRunRests = new System.Windows.Forms.Button();
+            this.btnMLFQ = new System.Windows.Forms.Button();
+            this.btnSRTF = new System.Windows.Forms.Button();
             this.btnRoundRobin = new System.Windows.Forms.Button();
             this.restartApp = new System.Windows.Forms.Label();
             this.btnPriority = new System.Windows.Forms.Button();
@@ -310,9 +313,12 @@
             // 
             // cpuSchedulerTab
             // 
-            this.cpuSchedulerTab.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.cpuSchedulerTab.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cpuSchedulerTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cpuSchedulerTab.BackgroundImage")));
             this.cpuSchedulerTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cpuSchedulerTab.Controls.Add(this.btnRunRests);
+            this.cpuSchedulerTab.Controls.Add(this.btnMLFQ);
+            this.cpuSchedulerTab.Controls.Add(this.btnSRTF);
             this.cpuSchedulerTab.Controls.Add(this.btnRoundRobin);
             this.cpuSchedulerTab.Controls.Add(this.restartApp);
             this.cpuSchedulerTab.Controls.Add(this.btnPriority);
@@ -327,6 +333,37 @@
             this.cpuSchedulerTab.Size = new System.Drawing.Size(501, 413);
             this.cpuSchedulerTab.TabIndex = 1;
             this.cpuSchedulerTab.Text = "CPU Scheduler";
+            // 
+            // btnRunRests
+            // 
+            this.btnRunRests.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRunRests.Location = new System.Drawing.Point(300, 348);
+            this.btnRunRests.Name = "btnRunRests";
+            this.btnRunRests.Size = new System.Drawing.Size(145, 31);
+            this.btnRunRests.TabIndex = 15;
+            this.btnRunRests.Text = "Run Tests";
+            this.btnRunRests.UseVisualStyleBackColor = false;
+            this.btnRunRests.Click += new System.EventHandler(this.btnRunTests_Click);
+            // 
+            // btnMLFQ
+            // 
+            this.btnMLFQ.Location = new System.Drawing.Point(115, 343);
+            this.btnMLFQ.Name = "btnMLFQ";
+            this.btnMLFQ.Size = new System.Drawing.Size(117, 40);
+            this.btnMLFQ.TabIndex = 14;
+            this.btnMLFQ.Text = "MLFQ";
+            this.btnMLFQ.UseVisualStyleBackColor = true;
+            this.btnMLFQ.Click += new System.EventHandler(this.btnMLFQ_Click);
+            // 
+            // btnSRTF
+            // 
+            this.btnSRTF.Location = new System.Drawing.Point(16, 344);
+            this.btnSRTF.Name = "btnSRTF";
+            this.btnSRTF.Size = new System.Drawing.Size(84, 39);
+            this.btnSRTF.TabIndex = 13;
+            this.btnSRTF.Text = "SRTF";
+            this.btnSRTF.UseVisualStyleBackColor = true;
+            this.btnSRTF.Click += new System.EventHandler(this.btnSRTF_Click);
             // 
             // btnRoundRobin
             // 
@@ -587,5 +624,8 @@
         private System.Windows.Forms.Button btnRoundRobin;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnSRTF;
+        private System.Windows.Forms.Button btnMLFQ;
+        private System.Windows.Forms.Button btnRunRests;
     }
 }

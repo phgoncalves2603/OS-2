@@ -359,5 +359,82 @@ namespace CpuSchedulingWinForms
         {
             this.txtCodeInput.Clear();
         }
+
+       
+       
+
+        private void UpdateProcessList(int numberOfProcess)
+        {
+            listView1.Clear();
+            listView1.View = View.Details;
+            listView1.Columns.Add("Process ID", 150, HorizontalAlignment.Center);
+            listView1.Columns.Add("Quantum Time", 100, HorizontalAlignment.Center);
+
+            for (int i = 0; i < numberOfProcess; i++)
+            {
+                var item = new ListViewItem();
+                item.Text = "Process " + (i + 1);
+                item.SubItems.Add("-");
+                listView1.Items.Add(item);
+            }
+
+            listView1.Items.Add("\n");
+            listView1.Items.Add("CPU handles: " + numberOfProcess);
+        }
+
+        private void UpdateProgressBars(int numberOfProcess)
+        {
+            if (numberOfProcess <= 10)
+            {
+                this.progressBar1.Increment(4);
+                this.progressBar1.SetState(1);
+                this.progressBar2.Increment(13);
+                this.progressBar2.SetState(1);
+            }
+            else
+            {
+                this.progressBar1.Increment(15);
+                this.progressBar1.SetState(1);
+                this.progressBar2.Increment(38);
+                this.progressBar2.SetState(3);
+            }
+        }
+        private void btnSRTF_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.srtfAlgorithm(txtProcess.Text);
+                int numberOfProcess = Int16.Parse(txtProcess.Text);
+                UpdateProcessList(numberOfProcess);
+                UpdateProgressBars(numberOfProcess);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+
+        private void btnMLFQ_Click(object sender, EventArgs e)
+        {
+            if (txtProcess.Text != "")
+            {
+                Algorithms.mlfqAlgorithm(txtProcess.Text);
+                int numberOfProcess = Int16.Parse(txtProcess.Text);
+                UpdateProcessList(numberOfProcess);
+                UpdateProgressBars(numberOfProcess);
+            }
+            else
+            {
+                MessageBox.Show("Enter number of processes", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtProcess.Focus();
+            }
+        }
+        private void btnRunTests_Click(object sender, EventArgs e)
+        {
+            var tester = new SchedulingTester();
+            tester.RunAllTests();
+        }
+
     }
 }
